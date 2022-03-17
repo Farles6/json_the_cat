@@ -1,5 +1,5 @@
 const request = require("request");
-const fetchBreedDetails = (breedName, callback) => {
+const fetchBreedDescription = (breedName, callback) => {
   request(
     `https://api.thecatapi.com/v1/breeds/search?q=${breedName}`,
     (error, response, body) => {
@@ -17,4 +17,4 @@ const fetchBreedDetails = (breedName, callback) => {
   );
 };
 
-module.exports = { fetchBreedDetails };
+module.exports = { fetchBreedDescription };
